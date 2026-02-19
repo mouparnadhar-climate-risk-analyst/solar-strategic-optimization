@@ -5,32 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beyond Sunlight | Strategic Solar Optimization</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend:wght@300;600;800&display=swap" rel="stylesheet">
     <style>
         :root { --primary: #1a2a6c; --accent: #f1c40f; --success: #27ae60; --danger: #e74c3c; }
-        body { font-family: 'Inter', sans-serif; color: #333; background-color: #f8f9fa; }
+        body { font-family: 'Inter', sans-serif; color: #333; background-color: #f4f7f6; }
         h1, h2, h3, .brand { font-family: 'Lexend', sans-serif; }
-        .hero { background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d); color: white; padding: 100px 0; }
+        
+        /* HERO SECTION WITH BACKGROUND IMAGE */
+        .hero { 
+            position: relative;
+            background-image: url('https://images.unsplash.com/photo-1509391366360-feaffa64d18b?auto=format&fit=crop&q=80&w=2000'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            padding: 140px 0;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+        /* Dark overlay to make text pop */
+        .hero-overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.55);
+            z-index: 1;
+        }
+        .hero-content { position: relative; z-index: 2; }
+        
         .section-header { border-left: 5px solid var(--accent); padding-left: 15px; margin-bottom: 40px; font-weight: 700; color: var(--primary); }
         .card { border: none; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition: 0.3s; margin-bottom: 30px; }
         .card:hover { transform: translateY(-5px); }
         .felt-container { border-radius: 20px; overflow: hidden; border: 4px solid white; box-shadow: 0 20px 40px rgba(0,0,0,0.2); }
-        .btn-strategy { background-color: var(--accent); color: #000; font-weight: 700; padding: 15px 30px; border-radius: 50px; border: none; transition: 0.3s; }
-        .btn-strategy:hover { background-color: #000; color: var(--accent); transform: scale(1.05); }
+        .btn-strategy { background-color: var(--accent); color: #000; font-weight: 700; padding: 15px 35px; border-radius: 50px; border: none; transition: 0.3s; text-decoration: none; display: inline-block; }
+        .btn-strategy:hover { background-color: #fff; color: #000; transform: scale(1.05); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
         .metric-value { font-size: 2.5rem; font-weight: 800; color: var(--primary); }
-        footer { background: #000; color: rgba(255,255,255,0.6); padding: 60px 0; }
+        footer { background: #000; color: rgba(255,255,255,0.8); padding: 60px 0; }
+        footer a { color: var(--accent); text-decoration: none; }
     </style>
 </head>
 <body>
 
 <!-- HERO SECTION -->
 <div class="hero text-center">
-    <div class="container">
-        <h1 class="display-3 fw-bold mb-3">BEYOND SUNLIGHT</h1>
-        <p class="lead fs-3 mb-4">A Geospatial Optimization Model for Solar Infrastructure Investment</p>
-        <div class="d-flex justify-content-center gap-3">
-            <a href="#live-dashboard" class="btn btn-light btn-lg rounded-pill px-4">Live Dashboard</a>
-            <a href="Full_Strategic_Report.pdf" target="_blank" class="btn btn-outline-light btn-lg rounded-pill px-4">View Full Canva Report</a>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+        <h1 class="display-2 fw-bold mb-3" style="letter-spacing: -1px;">BEYOND SUNLIGHT</h1>
+        <p class="lead fs-3 mb-5 opacity-90">Strategic Optimization of Solar Infrastructure Investment Corridors</p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="#live-dashboard" class="btn btn-strategy">EXPLORE LIVE DASHBOARD</a>
+            <a href="Full_Strategic_Report.pdf" target="_blank" class="btn btn-outline-light btn-lg rounded-pill px-4 fw-bold">DOWNLOAD STRATEGIC REPORT</a>
         </div>
     </div>
 </div>
@@ -38,51 +60,51 @@
 <div class="container my-5">
 
     <!-- EXECUTIVE BRIEFING -->
-    <div class="row align-items-center mb-5 p-4 bg-white rounded-4 shadow-sm">
+    <div class="row align-items-center mb-5 p-5 bg-white rounded-4 shadow-sm border-bottom border-5 border-warning">
         <div class="col-lg-7">
-            <h2 class="section-header">The Strategic Mandate</h2>
-            <p class="lead text-muted">This study optimizes capital allocation for <strong>MBR Solar Park Phase 7</strong> by resolving the trade-off between atmospheric dust risk and grid CAPEX.</p>
-            <p>Our MCDA model identified <strong>Site 3</strong> as the optimal expansion zone, delivering a <strong>AED 233 Million Lifecycle Value Gap</strong> over logistically non-viable alternatives like Site 6.</p>
+            <h2 class="section-header">Executive Summary</h2>
+            <p class="lead text-muted">This project optimises capital allocation for <strong>MBR Solar Park Phase 7</strong> by resolving the critical trade-off between atmospheric dust risk and grid infrastructure CAPEX.</p>
+            <p>The integrated MCDA model identified <strong>Site 3</strong> as the optimal expansion zone, delivering a <strong>AED 233 Million Lifecycle Value surplus</strong> over logistically non-viable alternatives, while maintaining a 98% correlation with empirical soiling benchmarks.</p>
         </div>
         <div class="col-lg-5 text-center">
-            <div class="p-4 border-start border-4 border-success">
+            <div class="p-4 border-start border-4 border-success bg-light rounded-3">
                 <span class="text-uppercase small fw-bold text-success">Primary Recommendation</span>
                 <div class="metric-value">SITE 3</div>
-                <p class="fw-bold">Investment Grade: Optimal ROI</p>
-                <a href="Full_Strategic_Report.pdf" class="btn btn-strategy mt-2">DOWNLOAD EXECUTIVE BRIEF</a>
+                <p class="fw-bold mb-0">Investment Grade</p>
+                <p class="text-muted small">Optimal Lifecycle ROI</p>
             </div>
         </div>
     </div>
 
     <!-- LIVE DASHBOARD SECTION -->
-    <div id="live-dashboard" class="my-5">
-        <h2 class="section-header">1. Interactive ROI Dashboard (Live)</h2>
+    <div id="live-dashboard" class="my-5 pt-4">
+        <h2 class="section-header">1. Interactive Strategic Dashboard (Live)</h2>
         <div class="felt-container">
             <iframe 
-                src="https://felt.com/map/Suitability-Map-for-MBR-Solar-Park-Phase-7-Expansion-q3cdQm7RRkuCFxbwEQKslC?share=1&loc=24.7726,55.443,10.01z" 
+                src="https://felt.com/embed/map/Suitability-Map-for-MBR-Solar-Park-Phase-7-Expansion-q3cdQm7RRkuCFxbwEQKslC?loc=24.7726,55.443,10.01z" 
                 width="100%" 
-                height="650" 
+                height="700" 
                 frameborder="0" 
                 title="Felt Interactive Map">
             </iframe>
         </div>
-        <p class="mt-3 text-center text-muted small">Zoom and click on individual sites to view conditional investment status and 25-year NPV projections.</p>
+        <p class="mt-3 text-center text-muted small">Select individual sites to view conditional investment status and 25-year NPV projections.</p>
     </div>
 
     <!-- SPATIAL ANALYSIS -->
     <h2 class="section-header mt-5">2. Environmental Risk Modeling</h2>
-    <div class="row">
+    <div class="row g-4">
         <div class="col-lg-8">
             <div class="card p-3">
                 <h5>Spatial Dust Risk Index (DRI)</h5>
-                <img src="map_risk.png" class="img-fluid rounded shadow-sm" alt="Risk Map">
+                <img src="map_risk.png" class="img-fluid rounded" alt="Risk Map">
             </div>
         </div>
         <div class="col-lg-4">
             <div class="card p-3 h-100">
                 <h5>The Shamal Vector</h5>
                 <img src="chart_wind.png" class="img-fluid mb-3" alt="Wind Rose">
-                <p class="small text-muted">NW winds drive primary sand saltation risk. Sites in the SE corridor are sheltered by orientation logic, resulting in 0% upwind exposure.</p>
+                <p class="small text-muted">Analysis of NW Shamal winds confirms sand saltation paths. Sites in the SE corridor leverage orientation logic to achieve 0% upwind dune exposure.</p>
             </div>
         </div>
     </div>
@@ -94,45 +116,41 @@
             <div class="card p-3">
                 <h5>Seasonal AOD Trends (2020-2024)</h5>
                 <img src="chart_seasonal.png" class="img-fluid" alt="Seasonal Trends">
-                <p class="mt-3 small">Temporal analysis via NASA MODIS confirms a peak "Dust Season" from June to August, requiring dynamic cleaning schedules.</p>
+                <p class="mt-3 small">NASA MODIS monitoring identifies a peak "Dust Season" (June-August), driving the requirement for dynamic O&M resource allocation.</p>
             </div>
         </div>
         <div class="col-md-6">
             <div class="card p-3">
                 <h5>Model Validation (R² = 0.998)</h5>
                 <img src="chart_validation.png" class="img-fluid" alt="Validation">
-                <p class="mt-3 small">Regression analysis against empirical MBR soiling data confirms near-perfect predictive accuracy for energy degradation.</p>
+                <p class="mt-3 small">Regression analysis confirms the geospatial model as a statistically significant predictor of energy degradation and maintenance overheads.</p>
             </div>
         </div>
         <div class="col-md-6">
-            <div class="col-12">
-                <div class="card p-3 bg-white">
-                    <h5>Projected 25-Year NPV (AED)</h5>
-                    <img src="chart_npv.png" class="img-fluid" alt="NPV Chart">
-                </div>
+            <div class="card p-3 bg-white">
+                <h5>Projected 25-Year Net Value (AED)</h5>
+                <img src="chart_npv.png" class="img-fluid" alt="NPV Chart">
             </div>
         </div>
         <div class="col-md-6">
-            <div class="col-12">
-                <div class="card p-3 bg-white">
-                    <h5>Annual O&M Benchmarking</h5>
-                    <img src="chart_om.png" class="img-fluid" alt="OPEX Chart">
-                </div>
+            <div class="card p-3 bg-white">
+                <h5>Annual O&M Benchmarking</h5>
+                <img src="chart_om.png" class="img-fluid" alt="OPEX Chart">
             </div>
         </div>
     </div>
 
     <!-- SITE SELECTION MAP -->
-    <h2 class="section-header mt-5">4. The Optimized Solution</h2>
+    <h2 class="section-header mt-5">4. Geospatial Decision Matrix</h2>
     <div class="row">
-        <div class="col-12">
+        <div class="col-12 text-center">
             <div class="card p-4">
-                <img src="map_suitability.png" class="img-fluid mb-4" alt="MCDA Suitability">
-                <div class="row text-center fw-bold text-muted">
-                    <div class="col">Solar: 40%</div>
-                    <div class="col">Dust: 35%</div>
-                    <div class="col">Grid: 15%</div>
-                    <div class="col">Land: 10%</div>
+                <img src="map_suitability.png" class="img-fluid mb-4 shadow-sm" alt="MCDA Suitability">
+                <div class="row fw-bold text-muted">
+                    <div class="col">Solar Intensity: 40%</div>
+                    <div class="col">Dust Mitigation: 35%</div>
+                    <div class="col">Grid Proximity: 15%</div>
+                    <div class="col">Land Optimization: 10%</div>
                 </div>
             </div>
         </div>
@@ -142,11 +160,14 @@
 
 <footer>
     <div class="container text-center">
-        <h3 class="text-white brand mb-3">Strategic Energy Intelligence</h3>
-        <p class="mb-4">Portfolio Project for Doctor of Business Administration (DBA) Application</p>
+        <h2 class="text-white brand mb-3">Mouparna Dhar</h2>
+        <p class="mb-2 lead fw-light">Climate Risk Analyst & Geospatial Data Science</p>
+        <p class="mb-4">
+            <a href="mailto:mouparnadhar2330@gmail.com" class="btn btn-outline-warning btn-sm px-4 rounded-pill">mouparnadhar2330@gmail.com</a>
+        </p>
         <div class="opacity-50 small">
-            <p>Data: NASA (MODIS/POWER), Copernicus (Sentinel-2/ERA5), USGS (SRTM), DEWA Public Reports</p>
-            <p>&copy; 2025 | Developed by [Your Name]</p>
+            <p>Data Sources: NASA MODIS, Copernicus ERA5, ESA Sentinel-2, USGS SRTM, DEWA Public Reports</p>
+            <p>&copy; 2025 Strategic Business Analytics Portfolio | All Rights Reserved</p>
         </div>
     </div>
 </footer>
