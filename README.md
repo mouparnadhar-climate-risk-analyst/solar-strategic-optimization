@@ -1,4 +1,4 @@
-# Beyond Sunlight: Strategic Solar Optimization ☀️⚡
+# Beyond Sunlight: Strategic Solar Optimisation ☀️⚡
 ### A Geospatial Investment Model for MBR Solar Park Phase 7
 **Analyst:** Mouparna Dhar | Climate Risk & Geospatial Analyst  
 **Date:** February 2026  
@@ -11,12 +11,12 @@
 ## 📊 Executive Summary
 Utility-scale solar investment in the MENA region faces a critical paradox: areas with the highest solar irradiance often coincide with the highest atmospheric dust loading. 
 
-This project optimizes capital allocation for the **MBR Solar Park Phase 7 Expansion** by resolving the trade-off between atmospheric dust risk (O&M costs) and grid infrastructure logistics (CAPEX). By integrating satellite data with financial modeling, this study identifies a **AED 233 Million Lifecycle Value Gap** between the optimal site and the logistical outliers.
+This project optimises capital allocation for the **MBR Solar Park Phase 7 Expansion** by resolving the trade-off between atmospheric dust risk (O&M costs) and grid infrastructure logistics (CAPEX). By integrating satellite data with financial modelling, this study identifies a **AED 233 Million Lifecycle Value Gap** between the optimal site and the logistical outliers.
 
 ---
 
-## 🌍 1. The "Invisible Risk": Dust & Wind Modeling
-Static geospatial analysis is insufficient for operational budgeting. I utilized NASA MODIS satellite data (2020-2024) to map the **"Dust Risk Index" (DRI)** across the 500 km² expansion zone.
+## 🌍 1. The "Invisible Risk": Dust & Wind Modelling
+Static geospatial analysis is insufficient for operational budgeting. I utilised NASA MODIS satellite data (2020-2024) to map the **"Dust Risk Index" (DRI)** across the 500 km² expansion zone.
 
 ### The Spatial Risk Landscape
 ![Dust Risk Map](map_risk.png)
